@@ -5,38 +5,53 @@ import { FaTimes } from "react-icons/fa";
 
 const skillDescriptions: Record<string, string> = {
   React:
-    "React es una biblioteca de JavaScript para construir interfaces de usuario. Permite a los desarrolladores crear componentes de UI reutilizables y gestionar el estado de la aplicación de manera eficiente.",
+    "React is a JavaScript library for building user interfaces. It allows developers to create reusable UI components and efficiently manage application state.",
   TypeScript:
-    "TypeScript es un lenguaje de programación fuertemente tipado que se basa en JavaScript, brindándote mejores herramientas a cualquier escala.",
+    "TypeScript is a strongly typed programming language based on JavaScript, providing better tools at any scale.",
   "Framer Motion":
-    "Framer Motion es una biblioteca de movimiento lista para producción para React que impulsa las animaciones en interfaces de usuario.",
+    "Framer Motion is a production-ready motion library for React that powers animations in user interfaces.",
   "Tailwind CSS":
-    "Tailwind CSS es un framework CSS utility-first que permite el desarrollo rápido de UI con clases predefinidas.",
-  Sass: "Sass es un lenguaje de script preprocesador que se interpreta o compila en CSS, agregando funciones poderosas como variables y reglas anidadas.",
-  CSS: "CSS (Hojas de Estilo en Cascada) es un lenguaje de hojas de estilo utilizado para describir la presentación de un documento escrito en HTML.",
-  HTML: "HTML es el lenguaje de marcado estándar para documentos diseñados para mostrarse en un navegador web.",
+    "Tailwind CSS is a utility-first CSS framework that enables rapid UI development with predefined classes.",
+  Sass: "Sass is a preprocessor scripting language that compiles into CSS, adding powerful features like variables and nested rules.",
+  CSS: "CSS (Cascading Style Sheets) is a style sheet language used to describe the presentation of a document written in HTML.",
+  HTML: "HTML is the standard markup language for documents designed to be displayed in a web browser.",
   JavaScript:
-    "JavaScript es un lenguaje de programación que permite páginas web interactivas y es una parte esencial de las aplicaciones web.",
+    "JavaScript is a programming language that enables interactive web pages and is an essential part of web applications.",
   "Node.js":
-    "Node.js es un entorno de ejecución de JavaScript construido sobre el motor V8 de Chrome, que permite ejecutar JavaScript en el lado del servidor.",
+    "Node.js is a JavaScript runtime built on Chrome's V8 engine, allowing JavaScript to run on the server side.",
   "Next.js":
-    "Next.js es un framework de React que permite funcionalidades como renderizado del lado del servidor y generación de sitios web estáticos.",
+    "Next.js is a React framework that enables server-side rendering and static site generation.",
   "Express.js":
-    "Express.js es un framework de aplicación web minimalista y flexible para Node.js que proporciona un conjunto robusto de características.",
+    "Express.js is a minimalist and flexible web application framework for Node.js that provides a robust set of features.",
   MongoDB:
-    "MongoDB es un programa de base de datos orientado a documentos multiplataforma, clasificado como una base de datos NoSQL.",
+    "MongoDB is a cross-platform document-oriented database program, classified as a NoSQL database.",
   Prisma:
-    "Prisma es un ORM de próxima generación que ayuda a los desarrolladores a construir más rápido y cometer menos errores con un modelo de datos intuitivo.",
+    "Prisma is a next-generation ORM that helps developers build faster and make fewer errors with an intuitive data model.",
   MySQL:
-    "MySQL es un sistema de gestión de bases de datos relacionales de código abierto utilizado para aplicaciones web y procesamiento de transacciones en línea.",
+    "MySQL is an open-source relational database management system used for web applications and online transaction processing.",
   Docker:
-    "Docker es una plataforma para desarrollar, enviar y ejecutar aplicaciones en contenedores.",
-  Git: "Git es un sistema de control de versiones distribuido para rastrear cambios en el código fuente durante el desarrollo de software.",
+    "Docker is a platform for developing, shipping, and running applications in containers.",
+  Git: "Git is a distributed version control system used to track changes in source code during software development.",
   GitHub:
-    "GitHub es un servicio de alojamiento basado en web para control de versiones usando Git, utilizado principalmente para código.",
+    "GitHub is a web-based hosting service for version control using Git, primarily used for code.",
   Trello:
-    "Trello es una aplicación de gestión de proyectos y organización de tareas basada en web, estilo Kanban.",
-  Jira: "Jira es un producto de seguimiento de problemas que permite el seguimiento de errores y la gestión ágil de proyectos.",
+    "Trello is a web-based project management and task organization application in Kanban style.",
+  Jira: "Jira is an issue tracking product that allows bug tracking and agile project management.",
+  "C++":
+    "C++ is a high-performance programming language widely used for software development, game development, and embedded systems.",
+  "C#": "C# is a programming language developed by Microsoft, primarily used for desktop applications, game development with Unity, and web development with .NET.",
+  Java: "Java is an object-oriented programming language widely used in enterprise applications, mobile development, and backend services.",
+  PHP: "PHP is an open-source programming language designed for web development and server-side execution.",
+  PostgreSQL:
+    "PostgreSQL is an open-source relational database management system known for its stability, scalability, and advanced transaction support.",
+  Laravel:
+    "Laravel is a PHP framework designed to simplify the development of robust and secure web applications with an elegant syntax.",
+  Spring:
+    "Spring is a Java framework that provides infrastructure for developing enterprise and web applications.",
+  Kotlin:
+    "Kotlin is a modern and concise programming language that runs on the JVM, primarily used for Android development.",
+  Python:
+    "Python is an interpreted, multipurpose programming language known for its clear syntax and use in web development, data science, and artificial intelligence.",
 };
 
 interface Skill {
@@ -145,4 +160,3 @@ export const SkillCard = ({ name, icon }: Skill) => {
     </>
   );
 };
-

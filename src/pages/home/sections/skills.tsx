@@ -28,6 +28,12 @@ import { MdSettings } from "react-icons/md";
 import { FaJava } from "react-icons/fa6";
 import { TbBrandCSharp } from "react-icons/tb";
 import { SiCplusplus } from "react-icons/si";
+import { FaPython } from "react-icons/fa";
+import { SiSpring } from "react-icons/si";
+import { FaPhp } from "react-icons/fa";
+import { SiPostgresql } from "react-icons/si";
+import { FaLaravel } from "react-icons/fa6";
+import { TbBrandKotlin } from "react-icons/tb";
 
 const SkillsPortfolio = () => {
   const skills = {
@@ -51,6 +57,12 @@ const SkillsPortfolio = () => {
       { name: "Java", icon: <FaJava className="text-gray-200" /> },
       { name: "C#", icon: <TbBrandCSharp className="text-blue-500" /> },
       { name: "C++", icon: <SiCplusplus className="text-blue-500" /> },
+      { name: "Python", icon: <FaPython className="text-blue-500" /> },
+      { name: "Spring", icon: <SiSpring className="text-green-500" /> },
+      { name: "Kotlin", icon: <TbBrandKotlin className="text-blue-500" /> },
+      { name: "PHP", icon: <FaPhp className="text-blue-500" /> },
+      { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-500" /> },
+      { name: "Laravel", icon: <FaLaravel className="text-blue-500" /> },
     ],
     database: [
       { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },

@@ -30,9 +30,15 @@ export default function Home() {
           </LineTopButton>
           <LineVerticalLeft>
             <div className="flex flex-col p-2 ml-3 sm:ml-0 sm:p-6 sm:p-10">
-              <TypingHeader text={["Front End Developer", "Web Developer"]} />
+              <TypingHeader
+                text={[
+                  "FrontEnd Developer",
+                  "Software Developer",
+                  "Backend Developer",
+                ]}
+              />
               <h1 className="text-2xl font-extralight mt-3 p-3">
-                Carlos Agustin Nicolas Cuello
+                Ulises Bravo Sierra
               </h1>
               <div className="flex flex-col w-full min-h-[600px] mt-20 transition-all">
                 <div className="relative flex flex-col min-h-[600px] w-full mt-20 lg:p-3 sm:px-10">

@@ -110,22 +110,22 @@ const SkillsPortfolio = () => {
 
         <div className="space-y-2">
           <SkillSection
-            title="Desarrollo Frontend"
+            title="Frontend development"
             items={skills.frontend}
             icon={<FaReact className="text-blue-500" />}
           />
           <SkillSection
-            title="Desarrollo Backend"
+            title="Backend development"
             items={skills.backend}
             icon={<BsDatabaseFillGear className="text-green-500" />}
           />
           <SkillSection
-            title="Gestión de Bases de Datos"
+            title="Database management"
             items={skills.database}
             icon={<FaDatabase className="text-blue-400" />}
           />
           <SkillSection
-            title="Herramientas"
+            title="Tools"
             items={skills.tools}
             icon={<TbTool className="text-blue-400" />}
           />

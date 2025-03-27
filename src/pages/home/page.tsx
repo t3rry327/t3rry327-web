@@ -24,7 +24,7 @@ export default function Home() {
               <div className="flex p-4 border-2 justify-center rounded-full items-center">
                 <LuFileSpreadsheet className="text-[20px]" />
               </div>
-              <p>Ir a Resumen</p>
+              <p>Go to summary</p>
               <IoIosArrowForward className="text-[20px]" />
             </div>
           </LineTopButton>

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const links = [
   { path: "/", label: "Home" },
   { path: "/projects", label: "Projects" },
-  { path: "/summary", label: "Summary" },
+  { path: "/resume", label: "Resume" },
 ];
 
 export const NavBar = () => {

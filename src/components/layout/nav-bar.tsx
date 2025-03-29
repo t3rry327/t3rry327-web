@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
 import { motion } from "framer-motion";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 const links = [
   { path: "/", label: "Home" },
@@ -24,7 +26,7 @@ export const NavBar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
+          <div className="flex items-center w-full justify-between">
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 {links.map((link) => (
@@ -38,6 +40,28 @@ export const NavBar = () => {
                   </motion.div>
                 ))}
               </div>
+            </div>
+            <div className="mr-10 ml-6 flex items-baseline space-x-10">
+              <a
+                href="https://github.com/t3rry327"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub
+                  size={25}
+                  className="flex hover:scale-130 hover:text-blue-500 transition-all duration-300 ease-in-out cursor-pointer"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/t3rry327/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin
+                  size={25}
+                  className="flex hover:scale-130 hover:text-blue-300 transition-all duration-300 ease-in-out cursor-pointer"
+                />
+              </a>
             </div>
           </div>
           <div className="-mr-2 flex md:hidden">
@@ -60,7 +84,7 @@ export const NavBar = () => {
         transition={{ duration: 0.3 }}
         className="overflow-hidden md:hidden"
       >
-        <div className="px-2 pt-2 pb-10 space-y-1 sm:px-3">
+        <div className="px-2 pt-2 pb-20 pt-10 space-y-1 sm:px-3">
           {links.map((link) => (
             <motion.div
               key={link.path}

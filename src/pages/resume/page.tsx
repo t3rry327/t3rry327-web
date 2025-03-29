@@ -8,13 +8,20 @@ import { motion } from "framer-motion";
 import Footer from "../../components/layout/footer";
 
 export default function Summary() {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "./cv/cv.pdf";
+    link.download = "CV_Agustin_Cuello.pdf";
+    link.click();
+  };
+
   return (
     <>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="text-center mb-16 mt-[120px]"
+        className="text-center mt-[120px]"
       >
         <img
           src="./t3rry.jpg"
@@ -27,9 +34,22 @@ export default function Summary() {
         <p className="text-xl text-neutral-400">
           I am a full time software developer.
         </p>
+        <button
+          onClick={handleDownload}
+          className="relative px-5 py-2.5 overflow-hidden cursor-pointer font-medium text-indigo-400 bg-black-30 border border-gray-700 rounded-lg shadow-inner group my-6"
+        >
+          <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-indigo-600 group-hover:w-full ease"></span>
+          <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-indigo-600 group-hover:w-full ease"></span>
+          <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-indigo-600 group-hover:h-full ease"></span>
+          <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-indigo-600 group-hover:h-full ease"></span>
+          <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-indigo-600 opacity-0 group-hover:opacity-100"></span>
+          <span className="relative text-base font-semibold transition-colors duration-300 delay-200 group-hover:text-white ease">
+            Download CV
+          </span>
+        </button>
       </motion.div>
       <section className="mb-16 flex p-3 flex-col items-center justify-center">
-        <h2 className="text-3xl font-bold mb-20 text-center">What I Do</h2>
+        <h2 className="text-3xl font-bold mb-10 mt-6 text-center">What I Do</h2>
         <div className="max-w-[1000px] flex flex-col sm:grid sm:grid-flow-col sm:grid-rows-2 gap-10 mb-10">
           <motion.p
             initial={{ opacity: 0, x: -100 }}

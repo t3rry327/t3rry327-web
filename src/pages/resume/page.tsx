@@ -11,7 +11,7 @@ export default function Summary() {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = "./cv/cv.pdf";
-    link.download = "CV_Agustin_Cuello.pdf";
+    link.download = "CV_Ulises_Bravo.pdf";
     link.click();
   };
 

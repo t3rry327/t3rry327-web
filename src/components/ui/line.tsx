@@ -25,7 +25,7 @@ export const LineVerticalRight = ({
 }) => {
   return (
     <>
-      <div className="flex flex-col min-h-[70vh] relative mt-[18px]">
+      <div className="flex flex-col min-h-[70vh] relative mt-[18px] pb-40">
         <motion.div
           className="absolute right-0 top-0 h-full w-[2px]"
           style={{

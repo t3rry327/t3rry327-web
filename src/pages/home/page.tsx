@@ -12,6 +12,7 @@ import { LuFileSpreadsheet, LuNotebook, LuUser } from "react-icons/lu";
 import SkillsPortfolio from "./sections/skills.tsx";
 import { IoIosArrowForward } from "react-icons/io";
 import { Planet } from "../../components/common/planet.tsx";
+import Footer from "../../components/layout/footer.tsx";
 
 export default function Home() {
   return (
@@ -67,6 +68,7 @@ export default function Home() {
           </LineVerticalRight>
         </div>
       </ModalContextProvider>
+      <Footer />
     </>
   );
 }

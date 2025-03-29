@@ -5,6 +5,7 @@ import { MdCloudQueue } from "react-icons/md";
 import { MdOutlineComputer } from "react-icons/md";
 import { IoSettingsOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
+import Footer from "../../components/layout/footer";
 
 export default function Summary() {
   return (
@@ -84,7 +85,7 @@ export default function Summary() {
           </motion.p>
         </div>
       </section>
-      <div className="flex flex-col lg:flex-row mt-[70px] justify-center gap-3">
+      <div className="flex flex-col lg:flex-row mt-[70px] justify-center gap-3 pb-40">
         <div className="flex flex-col">
           <h2 className="text-3xl p-3 text-center">Experience</h2>
           <ExperiencesSM />
@@ -94,6 +95,7 @@ export default function Summary() {
           <SkillsPortfolioSm />
         </div>
       </div>
+      <Footer />
     </>
   );
 }

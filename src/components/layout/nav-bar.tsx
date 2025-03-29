@@ -20,7 +20,7 @@ export const NavBar = () => {
   return (
     <nav
       style={{ zIndex: 999 }}
-      className="bg-[#161621] border-b border-gray-800 fixed w-full top-0"
+      className="bg-black/30 backdrop-blur-xl border-b border-gray-800 fixed w-full top-0"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">

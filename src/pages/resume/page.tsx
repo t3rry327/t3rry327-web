@@ -29,7 +29,7 @@ export default function Summary() {
       </motion.div>
       <section className="mb-16 flex p-3 flex-col items-center justify-center">
         <h2 className="text-3xl font-bold mb-20 text-center">What I Do</h2>
-        <div className="max-w-[1000px] grid grid-flow-col grid-rows-2 gap-10 mb-10">
+        <div className="max-w-[1000px] flex flex-col sm:grid sm:grid-flow-col sm:grid-rows-2 gap-10 mb-10">
           <motion.p
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}

@@ -1,88 +1,5 @@
 import { motion } from "framer-motion";
-
-const education = [
-  {
-    id: 1,
-    title: "Game Development with Unreal Engine 5",
-    institution: "Udemy",
-    period: "July 2022",
-    description: [
-      "I learned how to develop a game from scratch. From level design, lighting, physics, mechanics, to architecture, multiplayer, optimization and procedural generation. (a lot of math D:)",
-    ],
-  },
-  {
-    id: 2,
-    title: "Node.JS",
-    institution: "Nice guy in YouTube",
-    period: "April 2022",
-    description: [
-      "Building discord bots mainly, but then I delved into Express, Sockets and eventually microservices development.",
-    ],
-  },
-  {
-    id: 3,
-    title: "TypeScript",
-    institution: "Nice guy in YouTube",
-    period: "January 2022",
-    description: [
-      "The Java-developer's JavaScript. Now with fewer foot-guns! (Now they're compiler errors…!)",
-    ],
-  },
-  {
-    id: 4,
-    title: "JavaScript",
-    institution: "Nice guy in YouTube",
-    period: "December 2021",
-    description: [
-      "Single-threaded, natively asynchronous, designed in a week, revised by committee, installed on every modern computer. What could go… Await for it… Promise it's worth it…",
-    ],
-  },
-  {
-    id: 5,
-    title: "C++",
-    institution: "Nice guy in YouTube",
-    period: "September 2021",
-    description: ["I Thought It Was Complicated BEFORE .. (Beginner course)"],
-  },
-  {
-    id: 6,
-    title: "C#",
-    institution: "A lot of practice & StackOverflow",
-    period: "May 2021",
-    description: ["You'll Swear It's Not Java..."],
-  },
-  {
-    id: 7,
-    title: "PHP",
-    institution: "Nice Indian (i won't forget) YouTube Guy",
-    period: "June 2020",
-    description: [
-      "Wait, you put HTML, CSS and SQL in here? And we installed this everywhere? This should be called 'How To Build The Internet in 30 Days or Less… Pocket Edition… for Dummies… with root.'",
-    ],
-  },
-  {
-    id: 8,
-    title: "LUA",
-    institution: "A lot of practice and docs",
-    period: "March 2020",
-    description: [
-      "And You Thought JavaScript Was Confusing...",
-      "We don’t have much anything, but we have tables! Tables for everything! Even integers and strings are tables!",
-      "Game scripting and time burning.",
-    ],
-  },
-  {
-    id: 9,
-    title: "Java (Android Studio)",
-    institution: "A lot of practice and docs",
-    period: "August 2019",
-    description: [
-      "Write once, debug everywhere!",
-      "(Re)Write Once (Every Major Version), Pray Your Containers Still Work.",
-      "School Thesis.",
-    ],
-  },
-];
+import { education } from "../../data/data";
 
 const itemVariants = {
   hidden: { opacity: 0, x: -50 },
@@ -125,4 +42,3 @@ export const Education = () => (
     </motion.div>
   </div>
 );
-

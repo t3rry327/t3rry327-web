@@ -29,7 +29,7 @@ const Terminal: React.FC = () => {
         <h1
           className={`text-2xl text-gray-500 ${minimizeTerminal ? "block animate-pulse" : "hidden"}`}
         >
-          Terminal Minimizada
+          Minimized Terminal
         </h1>
         {!closeTerminal && (
           <motion.div
@@ -89,13 +89,13 @@ const Terminal: React.FC = () => {
                   className={`px-4 py-3 cursor-pointer ${activeTab === 0 ? "border-b border-blue-500 text-blue-500" : "text-gray-400"}`}
                   onClick={() => setActiveTab(0)}
                 >
-                  Experiencia
+                  Experience
                 </button>
                 <button
                   className={`px-4 py-3 cursor-pointer ${activeTab === 1 ? "border-b border-blue-500 text-blue-500" : "text-gray-400"}`}
                   onClick={() => setActiveTab(1)}
                 >
-                  Educación
+                  Education
                 </button>
               </div>
               <div className="flex flex-col p-1">
@@ -154,4 +154,3 @@ const Terminal: React.FC = () => {
 };
 
 export default Terminal;
-

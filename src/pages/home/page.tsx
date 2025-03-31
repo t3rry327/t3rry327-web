@@ -32,11 +32,7 @@ export default function Home() {
           <LineVerticalLeft>
             <div className="flex flex-col p-2 ml-3 sm:ml-0 sm:p-6 sm:p-10">
               <TypingHeader
-                text={[
-                  "FrontEnd Developer",
-                  "Software Developer",
-                  "Backend Developer",
-                ]}
+                text={["Software Developer", "Backend Developer"]}
               />
               <h1 className="text-2xl font-extralight mt-3 p-3">
                 Ulises Bravo Sierra
